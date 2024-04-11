@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de control - Otaku Odyssey</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilosadmin.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Parte principal de la administracion -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="bg-black text-white rounded p-2">
+                    <div class="logo">
+                        <a href="admin.html"><img src="img/logo.png" alt="logo"
+                                class="p-2 rounded-circle img-fluid"></a>
+                        <a style="text-decoration: none;" href="pedidos.html" class="p-3 text-light"><i
+                                class="icon ion-md-apps mr-2 lead"></i> Pedidos</a>
+                        <a style="text-decoration: none;" href="usuarios.html" class="p-3 text-light"><i
+                                class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
+                        <a style="text-decoration: none;" href="perfil.html" class="p-3 text-light"><i
+                                class="icon ion-md-contact mr-2 lead"></i> Perfil</a>
+                        <a style="text-decoration: none;" href="listaproducto.html" class="p-3 text-light"><i
+                                class="icon ion-md-basket"></i> Productos</a>
+                        <a style="text-decoration: none;" href="index.html" class="p-3 text-light"><i
+                                class="icon ion-md-arrow mr-2 lead"></i> Volver a la pagina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Containers -->
+        <!-- Informacion del administrador -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card mt-4 p-5">
+                        <img class="card-img-top img-fluid" src="img/empresario.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Nicolas Liñan De Ariza Fernandez</h4>
+                            <p class="card-text">Bienvenido nuevamente al panel de administrador.</p>
+                            <a href="pedidos.html" class="btn btn-primary">Revisar pedidos recientes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Informacion de ultimos pedidos -->
+                <div class="col-sm-4">
+                    <div class="mt-4 p-5 bg-secondary text-white rounded">
+                        <h2>Ultimos pedidos enviados</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ID Pedido</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Domicilio</th>
+                                        <th>Producto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Benjamin</td>
+                                        <td>Bello</td>
+                                        <td>Colo-Colo 1232, Calama</td>
+                                        <td>Figura Madara Uchiha a escala</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Ignacio</td>
+                                        <td>Bustos</td>
+                                        <td>Caupolican 3201, Antofagasta</td>
+                                        <td>Tomos de manga Chainsaw Man 1/2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Mario</td>
+                                        <td>Zapata</td>
+                                        <td>Lo Barnechea 2314, Santiago</td>
+                                        <td>Figura Bakugo Katsuki</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Benjamin</td>
+                                        <td>Fernandez</td>
+                                        <td>Paicavi, Alto Hospicio</td>
+                                        <td>Pines Demon Slayer</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            <!-- Informacion externa -->
+            <div class="col-sm-4">
+                <div class="mt-4 p-5 bg-dark text-white rounded">
+                    <div class="alert alert-success">
+                        <strong>Entregados con exito!</strong> Aqui puedes <a href="pedidos.html" class="alert-link">observar los demas pedidos</a>.
+                    </div>
+                    <div class="alert alert-info">
+                        <strong>Nuestro productos son unicos.</strong> <a href="#" class="alert-link">Necesitas agregar o modificar alguno?</a>.
+                    </div>
+                    <div class="alert alert-secondary">
+                        <strong >Tenemos mucha clientela.</strong> <a href="#" class="alert-link">Necesitas eliminar o modificar alguno?</a>.
+                    </div>
+                </div>
+                <div class="mt-4 p-5 bg-primary text-white rounded">
+                    <h4>Ganancias estimadas:</h4>
+                    <h3>65.648.490$</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

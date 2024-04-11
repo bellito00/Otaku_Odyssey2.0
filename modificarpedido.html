@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de control - Otaku Odyssey</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilosadmin.css" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Parte principal de la administracion -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="bg-black text-white rounded p-2">
+                    <div class="logo">
+                        <a href="admin.html"><img src="img/logo.png" alt="logo"
+                                class="p-2 rounded-circle img-fluid" /></a>
+                        <a style="text-decoration: none" href="pedidos.html" class="p-3 text-light"><i
+                                class="icon ion-md-apps mr-2 lead"></i> Pedidos</a>
+                        <a style="text-decoration: none" href="usuarios.html" class="p-3 text-light"><i
+                                class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
+                        <a style="text-decoration: none" href="perfil.html" class="p-3 text-light"><i
+                                class="icon ion-md-contact mr-2 lead"></i> Perfil</a>
+                        <a style="text-decoration: none" href="listaproducto.html" class="p-3 text-light"><i
+                                class="icon ion-md-basket"></i> Productos</a>
+                        <a style="text-decoration: none" href="index.html" class="p-3 text-light"><i
+                                class="icon ion-md-arrow mr-2 lead"></i> Volver a la
+                            pagina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Cambios del pedido -->
+            <div class="col-sm-4">
+                <div class="bg-black text-white rounded mt-1 p-2">
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Estado del pedido:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa estado" name="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Cambiar region de envio:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa Region" name="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Cambiar comuna de envio:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa Comuna" name="text" />
+                    </div>
+                    <a href="pedidos.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
+                        pedido
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="text-white rounded">
+                    <h1 style="color: black">Resumen del pedido</h1>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Region</th>
+                                    <th>Comuna</th>
+                                    <th>Telefono</th>
+                                    <th>Producto</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Humberto</td>
+                                    <td>Suazo</td>
+                                    <td>Valparaiso</td>
+                                    <td>Quillota</td>
+                                    <td>820421053</td>
+                                    <td>Funko Pop Goku</td>
+                                    <td>Entregado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <h1 style="text-align: center">Imagen del producto</h1>
+                    <img src="img/goku.jpg" class="img-thumbnail mx-auto d-block" width="280" height="280"
+                        alt="Cinque Terre" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
