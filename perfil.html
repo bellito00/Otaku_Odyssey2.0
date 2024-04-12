@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de control - Otaku Odyssey</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilosadmin.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Parte principal de la administracion -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div class="bg-black text-white rounded p-2">
+                    <div class="logo">
+                        <a href="admin.html"><img src="img/logo.png" alt="logo"
+                                class="p-2 rounded-circle img-fluid"></a>
+                        <a style="text-decoration: none;" href="pedidos.html" class="p-3 text-light"><i
+                                class="icon ion-md-apps mr-2 lead"></i> Pedidos</a>
+                        <a style="text-decoration: none;" href="usuarios.html" class="p-3 text-light"><i
+                                class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
+                        <a style="text-decoration: none;" href="perfil.html" class="p-3 text-light"><i
+                                class="icon ion-md-contact mr-2 lead"></i> Perfil</a>
+                        <a style="text-decoration: none;" href="listaproducto.html" class="p-3 text-light"><i
+                                class="icon ion-md-basket"></i> Productos</a>
+                        <a style="text-decoration: none;" href="index.html" class="p-3 text-light"><i
+                                class="icon ion-md-arrow mr-2 lead"></i> Volver a la pagina</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Containers -->
+        <!-- Informacion del administrador -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="bg-black text-white rounded mt-1 p-2">
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Nombres:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa nombres" name="text" />
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Apellidos:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa aoellidos" name="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Cambiar cargo:</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="Ingresa cargo"
+                            name="text">
+                    </div>
+                    <a href="usuarios.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
+                        perfil
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card">
+                    <h1>Informacion actual del usuario:</h1>
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/empresario.jpg" style="height: 280px; width:280px;" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Nombres: Nicolas Liñan</h4>
+                        <h4 class="card-text">Apellidos: De Ariza Fernandez</h4>
+                        <h4 class="card-text">Cargo: CEO de Otaku Odyssey</h4>
+                        <label for="myfile">Selecciona una imagen</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -44,62 +44,47 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Cambios del pedido -->
-            <div class="col-sm-4">
+            <div class="col-sm-7">
                 <div class="bg-black text-white rounded mt-1 p-2">
                     <div class="mb-3 mt-3">
-                        <label for="text" class="form-label">Estado del pedido:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa estado" name="text" />
+                        <label for="text" class="form-label">Nombre del producto:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa nombre" name="text" />
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="text" class="form-label">Categoria:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Ingresa categoria" name="text" />
                     </div>
                     <div class="mb-3">
-                        <label for="text" class="form-label">Cambiar region de envio:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa Region" name="text" />
+                        <label for="number" class="form-label">Cambiar stock:</label>
+                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa stock"
+                            name="number">
                     </div>
                     <div class="mb-3">
-                        <label for="text" class="form-label">Cambiar comuna de envio:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa Comuna" name="text" />
+                        <label for="number" class="form-label">Cambiar Valor/precio:</label>
+                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa valor"
+                            name="number">
                     </div>
-                    <a href="pedidos.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
-                        pedido
+                    <a href="listaproducto.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
+                        producto
                     </a>
                 </div>
             </div>
 
-            <div class="col-sm-8">
-                <div class="text-white rounded">
-                    <h1 style="color: black">Resumen del pedido</h1>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Region</th>
-                                    <th>Comuna</th>
-                                    <th>Telefono</th>
-                                    <th>Producto</th>
-                                    <th>Estado</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Humberto</td>
-                                    <td>Suazo</td>
-                                    <td>Valparaiso</td>
-                                    <td>Quillota</td>
-                                    <td>820421053</td>
-                                    <td>Funko Pop Goku</td>
-                                    <td>Entregado</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="col-sm-5">
+                <div class="card">
+                    <h1>Informacion actual del perfil:</h1>
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/luffy.png" style="height: 280px; width:280px;" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Figura Luffy - One Piece</h4>
+                        <p class="card-text">Categoria: Figuras</p>
+                        <p class="card-text">Stock: 5</p>
+                        <p class="card-text">Valor: 15000</p>
+                        <label for="myfile">Cambiar imagen</label>
+                        <input type="file" id="myfile" name="myfile">
+                        <br>
+                        <br>
+                        <a href="admin.html" class="btn btn-primary">Volver al inicio</a>
                     </div>
-                </div>
-                <div>
-                    <h1 style="text-align: center">Imagen del producto</h1>
-                    <img src="img/goku.jpg" class="img-thumbnail mx-auto d-block" width="280" height="280"
-                        alt="Cinque Terre" />
                 </div>
             </div>
         </div>
