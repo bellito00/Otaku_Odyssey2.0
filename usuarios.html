@@ -17,28 +17,38 @@
 
 <body>
     <!-- Parte principal de la administracion -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm">
-                <div class="bg-black text-white rounded p-2">
-                    <div class="logo">
-                        <a href="admin.html"><img src="img/logo.png" alt="logo"
-                                class="p-2 rounded-circle img-fluid"></a>
-                        <a style="text-decoration: none;" href="pedidos.html" class="p-3 text-light"><i
-                                class="icon ion-md-apps mr-2 lead"></i> Pedidos</a>
-                        <a style="text-decoration: none;" href="usuarios.html" class="p-3 text-light"><i
-                                class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
-                        <a style="text-decoration: none;" href="perfil.html" class="p-3 text-light"><i
-                                class="icon ion-md-contact mr-2 lead"></i> Perfil</a>
-                        <a style="text-decoration: none;" href="listaproducto.html" class="p-3 text-light"><i
-                                class="icon ion-md-basket"></i> Productos</a>
-                        <a style="text-decoration: none;" href="index.html" class="p-3 text-light"><i
-                                class="icon ion-md-arrow mr-2 lead"></i> Volver a la pagina</a>
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="admin.html">
+                    <img src="img/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="usuarios.html">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listaproducto.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver a la pagina</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
+        </nav>
+    </header>
         <!-- Containers -->
         <!-- Informacion del administrador -->
         <div class="container-fluid">
