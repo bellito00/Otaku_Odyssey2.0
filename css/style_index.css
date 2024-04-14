@@ -26,3 +26,7 @@ body{
     background-image: url("https://w.wallha.com/ws/13/ixYIroM6.png");
     background-size: cover;
 }
+
+.navbar-nav .nav-link:hover {
+    color: orange !important;
+}
