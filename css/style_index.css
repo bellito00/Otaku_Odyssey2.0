@@ -4,7 +4,7 @@
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #f8f9fa;
+    background-color: #3b3c3d;
     padding: 20px;
     transition: right 0.3s ease;
 }
@@ -29,4 +29,22 @@ body{
 
 .navbar-nav .nav-link:hover {
     color: orange !important;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.product-table th, .product-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.product-table th {
+    background-color: #313030;
+}
+.product-table img {
+    max-width: 50px;
+    max-height: 50px;
 }
