@@ -35,7 +35,6 @@
                     </ul>
             </div>
         </nav>
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -120,6 +119,26 @@
             </div>
         </div>
     </footer>
+    <script>
+        function validarCVV(input) {
+            // Eliminar cualquier carácter que no sea un número
+            input.value = input.value.replace(/\D/g, '');
+            
+            // Limitar la longitud del campo a 3 dígitos
+            if (input.value.length > 3) {
+                input.value = input.value.slice(0, 3);
+            }
+        }
+        function validarNumeroTarjeta(input) {
+        // Eliminar cualquier carácter que no sea un número
+        input.value = input.value.replace(/\D/g, '');
+        
+        // Limitar la longitud del campo a 16 dígitos
+        if (input.value.length > 16) {
+            input.value = input.value.slice(0, 16);
+        }
+    }
+    </script>
 </body>
 
 </html>
