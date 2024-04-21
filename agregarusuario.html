@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de control - Otaku Odyssey</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilosadmin.css" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Parte principal de la administracion -->
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="admin.html">
+                    <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="usuarios.html">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listaproducto.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Volver a la pagina</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Parte del pedido -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Cambios del pedido -->
+            <div class="col-sm">
+                <div class="bg-black text-white rounded mt-1 p-2">
+                    <form action="usuarios.html" method="post">
+                        <div class="mb-3 mt-3">
+                            <label for="usuario" class="form-label">Nombre de usuario</label>
+                            <input type="text" required class="form-control" id="text" placeholder="Ingresa usuario" name="usuario">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Correo:</label>
+                            <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
+                          </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Contraseña:</label>
+                            <input type="password" required class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
+                        </div>
+                      <div class="mb-3">
+                        <label for="pwd2" class="form-label">Confirmar contraseña:</label>
+                        <input type="password" required class="form-control" id="pwd2" placeholder="Ingrese contraseña" name="pswd2">
+                      </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre real:</label>
+                            <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre real" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
+                                name="apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Telefono:</label>
+                            <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
+                                name="number">
+                        </div>
+                        <div>
+                            <label for="region" class="form-label">Seleccione Region:</label>
+                            <select id="region" name="region" class="form-select">
+                                <option value="Arica y Parinacota">Arica y Parinacota</option>
+                                <option value="Tarapacá">Tarapacá</option>
+                                <option value="Antofagasta">Antofagasta</option>
+                                <option value="Atacama">Atacama</option>
+                                <option value="Coquimbo">Coquimbo</option>
+                                <option value="Valparaíso">Valparaíso</option>
+                                <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+                                <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                <option value="Maule">Maule</option>
+                                <option value="Ñuble">Ñuble</option>
+                                <option value="Biobío" selected>Biobío</option>
+                                <option value="La Araucanía">La Araucanía</option>
+                                <option value="Los Ríos">Los Ríos</option>
+                                <option value="Los Lagos">Los Lagos</option>
+                                <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
+                                <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                            </select>
+                          </div>
+                          <div>
+                            <label for="comuna" class="form-label">Seleccione Comuna:</label>
+                            <select id="comuna" name="comuna" class="form-select">
+                                <option value="Concepción">Concepción</option>
+                                <option value="Talcahuano">Talcahuano</option>
+                                <option value="Chillán">Chillán</option>
+                                <option value="Los Ángeles">Los Ángeles</option>
+                                <option value="Coronel">Coronel</option>
+                                <option value="San Pedro de la Paz">San Pedro de la Paz</option>
+                                <option value="Tomé">Tomé</option>
+                                <option value="Penco">Penco</option>
+                                <option value="Lota">Lota</option>
+                                <option value="Hualpén">Hualpén</option>
+                            </select>
+                          </div>
+                          <br>
+                          <button type="submit" class="btn btn-primary">Crear usuario</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
