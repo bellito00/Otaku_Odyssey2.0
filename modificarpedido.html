@@ -56,20 +56,78 @@
             <div class="col-sm-4">
                 <div class="bg-black text-white rounded mt-1 p-2">
                     <div class="mb-3 mt-3">
-                        <label for="text" class="form-label">Estado del pedido:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa estado" name="text" />
+                        <form action="pedidos.html" method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
+                                    name="apellido">
+                            </div>
+                            <div>
+                                <label for="region" class="form-label">Seleccione Region:</label>
+                                <select id="region" name="region" class="form-select">
+                                    <option value="Arica y Parinacota">Arica y Parinacota</option>
+                                    <option value="Tarapacá">Tarapacá</option>
+                                    <option value="Antofagasta">Antofagasta</option>
+                                    <option value="Atacama">Atacama</option>
+                                    <option value="Coquimbo">Coquimbo</option>
+                                    <option value="Valparaíso">Valparaíso</option>
+                                    <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+                                    <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                    <option value="Maule">Maule</option>
+                                    <option value="Ñuble">Ñuble</option>
+                                    <option value="Biobío" selected>Biobío</option>
+                                    <option value="La Araucanía">La Araucanía</option>
+                                    <option value="Los Ríos">Los Ríos</option>
+                                    <option value="Los Lagos">Los Lagos</option>
+                                    <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
+                                    <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                                </select>
+                              </div>
+                              <div>
+                                <label for="comuna" class="form-label">Seleccione Comuna:</label>
+                                <select id="comuna" name="comuna" class="form-select">
+                                    <option value="Concepción">Concepción</option>
+                                    <option value="Talcahuano">Talcahuano</option>
+                                    <option value="Chillán">Chillán</option>
+                                    <option value="Los Ángeles">Los Ángeles</option>
+                                    <option value="Coronel">Coronel</option>
+                                    <option value="San Pedro de la Paz">San Pedro de la Paz</option>
+                                    <option value="Tomé">Tomé</option>
+                                    <option value="Penco">Penco</option>
+                                    <option value="Lota">Lota</option>
+                                    <option value="Hualpén">Hualpén</option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label for="number" class="form-label">Telefono:</label>
+                                <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
+                                    name="number">
+                            </div>
+                            <div>
+                                <label for="producto" class="form-label">Seleccione Producto:</label>
+                                <select id="producto" name="producto" class="form-select">
+                                    <option value="Goku">Funko Pop Goku</option>
+                                    <option value="Madara">Figura Madara Uchiha</option>
+                                    <option value="SNK">Manga SNK</option>
+                                </select>
+                              </div>
+                              <div>
+                                <label for="estado" class="form-label">Estado:</label>
+                                <select id="estado" name="estado" class="form-select">
+                                    <option value="Entregado">Entregado</option>
+                                    <option value="En entrega">En entrega</option>
+                                    <option value="Pagado">Pagado</option>
+                                    <option value="Cancelado">Cancelado</option>
+                                </select>
+                              </div>
+                              <br>
+                              <button type="submit" class="btn btn-primary">Modificar pedido</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="text" class="form-label">Cambiar region de envio:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa Region" name="text" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="text" class="form-label">Cambiar comuna de envio:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa Comuna" name="text" />
-                    </div>
-                    <a href="pedidos.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
-                        pedido
-                    </a>
+                </form>
                 </div>
             </div>
 

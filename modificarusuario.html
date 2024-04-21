@@ -56,21 +56,77 @@
             <div class="col-sm-7">
                 <div class="bg-black text-white rounded mt-1 p-2">
                     <div class="mb-3 mt-3">
-                        <label for="text" class="form-label">Nombre del usuario:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa nombre" name="text" />
+                        <form action="usuarios.html" method="post">
+                            <div class="mb-3 mt-3">
+                                <label for="usuario" class="form-label">Nombre de usuario</label>
+                                <input type="text" required class="form-control" id="text" placeholder="Ingresa usuario" name="usuario">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Correo:</label>
+                                <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
+                              </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Contraseña:</label>
+                                <input type="password" required class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
+                            </div>
+                          <div class="mb-3">
+                            <label for="pwd2" class="form-label">Confirmar contraseña:</label>
+                            <input type="password" required class="form-control" id="pwd2" placeholder="Ingrese contraseña" name="pswd2">
+                          </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre real:</label>
+                                <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre real" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
+                                    name="apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Telefono:</label>
+                                <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
+                                    name="number">
+                            </div>
+                            <div>
+                                <label for="region" class="form-label">Seleccione Region:</label>
+                                <select id="region" name="region" class="form-select">
+                                    <option value="Arica y Parinacota">Arica y Parinacota</option>
+                                    <option value="Tarapacá">Tarapacá</option>
+                                    <option value="Antofagasta">Antofagasta</option>
+                                    <option value="Atacama">Atacama</option>
+                                    <option value="Coquimbo">Coquimbo</option>
+                                    <option value="Valparaíso">Valparaíso</option>
+                                    <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+                                    <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                    <option value="Maule">Maule</option>
+                                    <option value="Ñuble">Ñuble</option>
+                                    <option value="Biobío" selected>Biobío</option>
+                                    <option value="La Araucanía">La Araucanía</option>
+                                    <option value="Los Ríos">Los Ríos</option>
+                                    <option value="Los Lagos">Los Lagos</option>
+                                    <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
+                                    <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                                </select>
+                              </div>
+                              <div>
+                                <label for="comuna" class="form-label">Seleccione Comuna:</label>
+                                <select id="comuna" name="comuna" class="form-select">
+                                    <option value="Concepción">Concepción</option>
+                                    <option value="Talcahuano">Talcahuano</option>
+                                    <option value="Chillán">Chillán</option>
+                                    <option value="Los Ángeles">Los Ángeles</option>
+                                    <option value="Coronel">Coronel</option>
+                                    <option value="San Pedro de la Paz">San Pedro de la Paz</option>
+                                    <option value="Tomé">Tomé</option>
+                                    <option value="Penco">Penco</option>
+                                    <option value="Lota">Lota</option>
+                                    <option value="Hualpén">Hualpén</option>
+                                </select>
+                              </div>
+                              <br>
+                              <button type="submit" class="btn btn-primary">Modificar usuario</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="pwd" class="form-label">Cambiar contraseña:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
-                    </div>
-                    <div class="mb-3">
-                        <label for="number" class="form-label">Cambiar telefono:</label>
-                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
-                            name="number">
-                    </div>
-                    <a href="usuarios.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
-                        usuario
-                    </a>
+                </form>
                 </div>
             </div>
 

@@ -48,122 +48,82 @@
             <div class="col-sm-12">
                 <div class="mx-5 p-0 bg-dark text-white rounded">
                     <div class="mt-4 p-5 fondo text-whiterow justify-content-center centrartexto align-items-center g-2 mt-2">
+                        <form action="confirmacion.html" method="post">
                         <div>
                             <a class="volverconlogo" href="index.html"></a>
                             <img src="img/logo.png" alt="logo" height="128" width="128" class="mx-auto d-block rounded-circle">
                             </a>
                             <form action="/action_page.php">
                                 <div class="mb-3 mt-3">
-                                    <label for="email" class="form-label">Nombre de usuario</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Ingresa usuario" name="email">
+                                    <label for="usuario" class="form-label">Nombre de usuario</label>
+                                    <input type="text" required class="form-control" id="text" placeholder="Ingresa usuario" name="usuario">
                                 </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="email" class="form-label">Correo:</label>
+                                    <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
+                                  </div>
                                 <div class="mb-3">
                                     <label for="pwd" class="form-label">Contraseña:</label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
+                                    <input type="password" required class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="pwd" class="form-label">Confirmar contraseña:</label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
-                                </div>
+                              <div class="mb-3">
+                                <label for="pwd2" class="form-label">Confirmar contraseña:</label>
+                                <input type="password" required class="form-control" id="pwd2" placeholder="Ingrese contraseña" name="pswd2">
+                              </div>
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre real:</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa nombre real" name="nombre">
+                                    <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre real" name="nombre">
                                 </div>
                                 <div class="mb-3">
                                     <label for="apellido" class="form-label">Apellido:</label>
-                                    <input type="text" class="form-control" id="apellido" placeholder="Ingresa apellido"
+                                    <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
                                         name="apellido">
                                 </div>
                                 <div class="mb-3">
                                     <label for="number" class="form-label">Telefono:</label>
-                                    <input type="number" class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
+                                    <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
                                         name="number">
                                 </div>
-                                <div class="mb-3 text-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown">Region</button>
-                                        <div class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="">Arica y Parinacota</a></li>
-                                            <li><a class="dropdown-item" href="#">Tarapaca</a></li>
-                                            <li><a class="dropdown-item" href="#">Antofagasta</a></li>
-                                            <li><a class="dropdown-item" href="#">Coquimbo</a></li>
-                                            <li><a class="dropdown-item" href="#">Valparaiso</a></li>
-                                            <li><a class="dropdown-item" href="#">Valparaiso</a></li>
-                                            <li><a class="dropdown-item" href="#">Metropolitano</a></li>
-                                            <li><a class="dropdown-item" href="#">Ohiggins</a></li>
-                                            <li><a class="dropdown-item" href="#">Maule</a></li>
-                                            <li><a class="dropdown-item" href="#">Ñuble</a></li>
-                                            <li><a class="dropdown-item" href="#">Bio-Bio</a></li>
-                                            <li><a class="dropdown-item" href="#">Araucania</a></li>
-                                            <li><a class="dropdown-item" href="#">Los Rios</a></li>
-                                            <li><a class="dropdown-item" href="#">Los Lagos</a></li>
-                                            <li><a class="dropdown-item" href="#">Aysen</a></li>
-                                            <li><a class="dropdown-item" href="#">Magallanes</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-3 text-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown">Comuna</button>
-                                        <div class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Alto Biobío</a></li>
-                                            <li><a class="dropdown-item" href="#">Antuco</a></li>
-                                            <li><a class="dropdown-item" href="#">Arauco</a></li>
-                                            <li><a class="dropdown-item" href="#">Bulnes</a></li>
-                                            <li><a class="dropdown-item" href="#">Cabrero</a></li>
-                                            <li><a class="dropdown-item" href="#">Cañete</a></li>
-                                            <li><a class="dropdown-item" href="#">Chiguayante</a></li>
-                                            <li><a class="dropdown-item" href="#">Cobquecura</a></li>
-                                            <li><a class="dropdown-item" href="#">Coihueco</a></li>
-                                            <li><a class="dropdown-item" href="#">Concepción</a></li>
-                                            <li><a class="dropdown-item" href="#">Contulmo</a></li>
-                                            <li><a class="dropdown-item" href="#">Coronel</a></li>
-                                            <li><a class="dropdown-item" href="#">Curanilahue</a></li>
-                                            <li><a class="dropdown-item" href="#">El Carmen</a></li>
-                                            <li><a class="dropdown-item" href="#">Florida</a></li>
-                                            <li><a class="dropdown-item" href="#">Hualpén</a></li>
-                                            <li><a class="dropdown-item" href="#">Hualqui</a></li>
-                                            <li><a class="dropdown-item" href="#">Laja</a></li>
-                                            <li><a class="dropdown-item" href="#">Lebu</a></li>
-                                            <li><a class="dropdown-item" href="#">Los Álamos</a></li>
-                                            <li><a class="dropdown-item" href="#">Los Ángeles</a></li>
-                                            <li><a class="dropdown-item" href="#">Lota</a></li>
-                                            <li><a class="dropdown-item" href="#">Monte Águila</a></li>
-                                            <li><a class="dropdown-item" href="#">Mulchén</a></li>
-                                            <li><a class="dropdown-item" href="#">Nacimiento</a></li>
-                                            <li><a class="dropdown-item" href="#">Negrete</a></li>
-                                            <li><a class="dropdown-item" href="#">Ninhue</a></li>
-                                            <li><a class="dropdown-item" href="#">Ñiquén</a></li>
-                                            <li><a class="dropdown-item" href="#">Pemuco</a></li>
-                                            <li><a class="dropdown-item" href="#">Penco</a></li>
-                                            <li><a class="dropdown-item" href="#">Pinto</a></li>
-                                            <li><a class="dropdown-item" href="#">Portezuelo</a></li>
-                                            <li><a class="dropdown-item" href="#">Quilaco</a></li>
-                                            <li><a class="dropdown-item" href="#">Quilleco</a></li>
-                                            <li><a class="dropdown-item" href="#">Quillón</a></li>
-                                            <li><a class="dropdown-item" href="#">Quirihue</a></li>
-                                            <li><a class="dropdown-item" href="#">Ránquil</a></li>
-                                            <li><a class="dropdown-item" href="#">San Carlos</a></li>
-                                            <li><a class="dropdown-item" href="#">San Fabián</a></li>
-                                            <li><a class="dropdown-item" href="#">San Ignacio</a></li>
-                                            <li><a class="dropdown-item" href="#">San Nicolás</a></li>
-                                            <li><a class="dropdown-item" href="#">San Pedro de la Paz</a></li>
-                                            <li><a class="dropdown-item" href="#">San Rosendo</a></li>
-                                            <li><a class="dropdown-item" href="#">Santa Bárbara</a></li>
-                                            <li><a class="dropdown-item" href="#">Santa Juana</a></li>
-                                            <li><a class="dropdown-item" href="#">Talcahuano</a></li>
-                                            <li><a class="dropdown-item" href="#">Tirúa</a></li>
-                                            <li><a class="dropdown-item" href="#">Tomé</a></li>
-                                            <li><a class="dropdown-item" href="#">Treguaco</a></li>
-                                            <li><a class="dropdown-item" href="#">Tucapel</a></li>
-                                            <li><a class="dropdown-item" href="#">Yumbel</a></li>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="confirmacion.html" class="btn btn-primary d-block mx-auto" role="button">Crear cuenta</a>
+                                <div>
+                                    <label for="region" class="form-label">Seleccione Region:</label>
+                                    <select id="region" name="region" class="form-select">
+                                        <option value="Arica y Parinacota">Arica y Parinacota</option>
+                                        <option value="Tarapacá">Tarapacá</option>
+                                        <option value="Antofagasta">Antofagasta</option>
+                                        <option value="Atacama">Atacama</option>
+                                        <option value="Coquimbo">Coquimbo</option>
+                                        <option value="Valparaíso">Valparaíso</option>
+                                        <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+                                        <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                        <option value="Maule">Maule</option>
+                                        <option value="Ñuble">Ñuble</option>
+                                        <option value="Biobío" selected>Biobío</option>
+                                        <option value="La Araucanía">La Araucanía</option>
+                                        <option value="Los Ríos">Los Ríos</option>
+                                        <option value="Los Lagos">Los Lagos</option>
+                                        <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
+                                        <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                                    </select>
+                                  </div>
+                                  <div>
+                                    <label for="comuna" class="form-label">Seleccione Comuna:</label>
+                                    <select id="comuna" name="comuna" class="form-select">
+                                        <option value="Concepción">Concepción</option>
+                                        <option value="Talcahuano">Talcahuano</option>
+                                        <option value="Chillán">Chillán</option>
+                                        <option value="Los Ángeles">Los Ángeles</option>
+                                        <option value="Coronel">Coronel</option>
+                                        <option value="San Pedro de la Paz">San Pedro de la Paz</option>
+                                        <option value="Tomé">Tomé</option>
+                                        <option value="Penco">Penco</option>
+                                        <option value="Lota">Lota</option>
+                                        <option value="Hualpén">Hualpén</option>
+                                    </select>
+                                  </div>
+                                  <br>
+                                  <button type="submit" class="btn btn-primary">Crear cuenta</button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>

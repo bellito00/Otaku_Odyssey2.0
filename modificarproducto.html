@@ -56,26 +56,38 @@
             <div class="col-sm-7">
                 <div class="bg-black text-white rounded mt-1 p-2">
                     <div class="mb-3 mt-3">
-                        <label for="text" class="form-label">Nombre del producto:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa nombre" name="text" />
+                        <form action="pedidos.html" method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre" name="nombre">
+                            </div>
+                              <div class="mb-3">
+                                <label for="number" class="form-label">Valor:</label>
+                                <input type="number" required class="form-control" id="valor" placeholder="Ingresa valor"
+                                    name="number">
+                            </div>
+                              <div class="mb-3">
+                                <label for="number" class="form-label">Stock:</label>
+                                <input type="number" required class="form-control" id="stock" placeholder="Ingresa stock"
+                                    name="number">
+                            </div>
+                            <div>
+                                <label for="producto" class="form-label">Tipo Producto:</label>
+                                <select id="producto" name="producto" class="form-select">
+                                    <option value="Manga">Manga</option>
+                                    <option value="Figuras">Figuras</option>
+                                    <option value="Accesorios">Accesorios</option>
+                                </select>
+                              </div>
+                              <br>
+                              <div>
+                                <label for="myfile">Elegir imagen</label>
+                                <input type="file" id="myfile" name="myfile">
+                            </div>
+                              <br>
+                              <button type="submit" class="btn btn-primary">Modificar producto</button>
                     </div>
-                    <div class="mb-3 mt-3">
-                        <label for="text" class="form-label">Categoria:</label>
-                        <input type="text" class="form-control" id="text" placeholder="Ingresa categoria" name="text" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="number" class="form-label">Cambiar stock:</label>
-                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa stock"
-                            name="number">
-                    </div>
-                    <div class="mb-3">
-                        <label for="number" class="form-label">Cambiar Valor/precio:</label>
-                        <input type="number" class="form-control" id="telefono" placeholder="Ingresa valor"
-                            name="number">
-                    </div>
-                    <a href="listaproducto.html" class="btn btn-primary" role="button" data-bs-toggle="button">Modificar
-                        producto
-                    </a>
+                </form>
                 </div>
             </div>
 
