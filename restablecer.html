@@ -19,47 +19,52 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="admin.html">
                     <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="t_productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Cuenta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="admin.html">Administracion</a>
-                        </li>
-                    </ul>
-                </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="t_productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="admin.html">Administracion</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="mx-5 p-0 bg-dark text-white rounded">
-                    <div class="mt-4 p-5 fondo text-white row justify-content-center centrartexto align-items-center g-2 mt-2">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 shadow">
+                <div class="mx-5 p-0 mt-4 bg-dark text-white border rounded">
+                    <div
+                        class="mt-4 p-5 fondo text-white row justify-content-center centrartexto align-items-center g-2 mt-2">
                         <div>
-                            <a class="volverconlogo" href="index.html"></a>
-                            <img src="img/logo.png" alt="logo" height="128" width="128" class="mx-auto d-block rounded-circle">
-                            <form action="/action_page.php">
+                            <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;"
+                                    class="mx-auto d-block rounded-circle">
+                            </a>
+                            <form id="passwordForm" action="contrasena.html" method="post" class="was-validated">
                                 <div class="mb-3 mt-3">
-                                    <label for="email" class="form-label">Ingresa el correo dueño de la cuenta:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Ingresa Correo" name="email">
+                                    <label for="mail" class="form-label">Ingrese correo electrónico</label>
+                                    <input type="email" class="form-control" id="idmail" placeholder="Ingresa correo"
+                                        name="mail" required>
+                                    <div class="invalid-feedback">Coloca un correo valido.</div>
                                 </div>
-                                <a href="contrasena.html" class="btn btn-primary" role="button">Enviar correo de restablecimiento</a>
+                                <button type="submit" class="btn btn-primary">Enviar correo de restablecimiento</button>
                             </form>
                         </div>
                     </div>
@@ -72,17 +77,17 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="mx-5 mt-5 p-4 bg-dark text-white rounded">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
-                    </a>
-                    <div class="d-flex flex-column align-items-end">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                        <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                        <div class="d-flex flex-column align-items-end">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 </body>
 
