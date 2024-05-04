@@ -19,70 +19,94 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="admin.html">
                     <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="t_productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Cuenta</a>
-                        </li>
-                    </ul>
-                </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="t_productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="mx-5 p-0 bg-dark text-white rounded">
-                    <div class="mt-4 p-5 fondo text-whiterow justify-content-center centrartexto align-items-center g-2 mt-2">
-                        <form action="confirmacion.html" method="post">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 shadow">
+                <div class="mx-5 p-0 mt-4 bg-dark text-white border rounded">
+                    <div
+                        class="mt-4 p-5 fondo text-whiterow justify-content-center centrartexto align-items-center g-2 mt-2">
                         <div>
-                            <a class="volverconlogo" href="index.html"></a>
-                            <img src="img/logo.png" alt="logo" height="128" width="128" class="mx-auto d-block rounded-circle">
+                            <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;"  class="mx-auto d-block rounded-circle">
                             </a>
-                            <form action="/action_page.php">
+                            <form id="passwordForm" action="confirmacion.html" method="post" class="was-validated">
                                 <div class="mb-3 mt-3">
                                     <label for="usuario" class="form-label">Nombre de usuario</label>
-                                    <input type="text" required class="form-control" id="text" placeholder="Ingresa usuario" name="usuario">
-                                </div>
-                                <div class="mb-3 mt-3">
-                                    <label for="email" class="form-label">Correo:</label>
-                                    <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
+                                    <input type="text" required class="form-control" id="text"
+                                        placeholder="Ingresa usuario" name="usuario">
+                                    <div class="invalid-feedback">Coloca un nombre de usuario valido.</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="pwd" class="form-label">Contraseña:</label>
-                                    <input type="password" required class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
+                                    <label for="mail" class="form-label">Ingrese correo electrónico</label>
+                                    <input type="email" class="form-control" id="idmail" placeholder="Ingresa correo" name="mail" required>
+                                    <div class="invalid-feedback">Coloca un correo valido.</div>
                                 </div>
-                            <div class="mb-3">
-                                <label for="pwd2" class="form-label">Confirmar contraseña:</label>
-                                <input type="password" required class="form-control" id="pwd2" placeholder="Ingrese contraseña" name="pswd2">
-                            </div>
-                                <div class="mb-3">
-                                    <label for="nombre" class="form-label">Nombre real:</label>
-                                    <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre real" name="nombre">
+                                <div class="row">
+                                    <div class="mb-3 col">
+                                        <label for="pwd" class="form-label">Contraseña:</label>
+                                        <input type="password" required class="form-control" id="password"
+                                            placeholder="Ingrese su contraseña" required>
+                                        <div class="invalid-feedback">Ingresa una contraseña.</div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="pwd2" class="form-label">Confirmar contraseña:</label>
+                                        <input type="password" required class="form-control" id="confirmPassword"
+                                            placeholder="Confirme su contraseña" required>
+                                        <div class="invalid-feedback">Ingresa una contraseña.</div>
+                                        <p class="invalid-feedback" id="message"></p>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="apellido" class="form-label">Apellido:</label>
-                                    <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
-                                        name="apellido">
+                                    <label for="rut" class="form-label">Ingrese Rut</label>
+                                    <input class="form-control" type="text" required id="idrut" name="rut"
+                                        placeholder="12345678-9" minlength="9" maxlength="10" required>
+                                    <div class="invalid-feedback">Ingrese rut sin punto y con guión</div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col">
+                                        <label for="nombre" class="form-label">Nombre real:</label>
+                                        <input type="text" id="nombre" required class="form-control"
+                                            placeholder="Ingrese nombre" pattern="[a-zA-Z]+"
+                                            title="Ingrese solo letras">
+                                        <div class="invalid-feedback">Ingresa un nombre valido.</div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="apellido" class="form-label">Apellido:</label>
+                                        <input type="text" id="apellido" required class="form-control"
+                                            placeholder="Ingrese apellido" pattern="[a-zA-Z]+"
+                                            title="Ingrese solo letras">
+                                        <div class="invalid-feedback">Ingresa un apellido valido.</div>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="number" class="form-label">Telefono:</label>
-                                    <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
-                                        name="number">
+                                    <input type="number" required class="form-control" id="telefono"
+                                        placeholder="Ingresa telefono sin el +56" name="number">
+                                    <div class="invalid-feedback">Ingresa telefono valido.</div>
                                 </div>
                                 <div>
                                     <label for="region" class="form-label">Seleccione Region:</label>
@@ -94,15 +118,18 @@
                                         <option value="Coquimbo">Coquimbo</option>
                                         <option value="Valparaíso">Valparaíso</option>
                                         <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
-                                        <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                        <option value="Libertador General Bernardo O'Higgins">Libertador General
+                                            Bernardo O'Higgins</option>
                                         <option value="Maule">Maule</option>
                                         <option value="Ñuble">Ñuble</option>
                                         <option value="Biobío" selected>Biobío</option>
                                         <option value="La Araucanía">La Araucanía</option>
                                         <option value="Los Ríos">Los Ríos</option>
                                         <option value="Los Lagos">Los Lagos</option>
-                                        <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
-                                        <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                                        <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General
+                                            Carlos Ibáñez del Campo</option>
+                                        <option value="Magallanes y de la Antártica Chilena">Magallanes y de la
+                                            Antártica Chilena</option>
                                     </select>
                                 </div>
                                 <div>
@@ -122,29 +149,30 @@
                                 </div>
                                 <br>
                                 <button type="submit" class="btn btn-primary">Crear cuenta</button>
+                            </form>
                         </div>
-                    </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/validar.js"></script>
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="mx-5 mt-5 p-4 bg-dark text-white rounded">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
-                    </a>
-                    <div class="d-flex flex-column align-items-end">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                        <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                        <div class="d-flex flex-column align-items-end">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 </body>
 

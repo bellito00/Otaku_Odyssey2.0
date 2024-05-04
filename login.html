@@ -48,21 +48,23 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="mx-5 p-0 bg-dark text-white rounded">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 shadow">
+                <div class="mx-5 p-0 mt-4 bg-dark text-white border rounded">
                     <div class="mt-4 p-5 fondo text-white row justify-content-center centrartexto align-items-center g-2 mt-2">
-                        <form action="index.html" method="post">
+                        <form action="index.html" method="post" class="was-validated">
                         <div>
-                            <a class="volverconlogo" href="index.html"></a>
-                            <img src="img/logo.png" alt="logo" height="128" width="128" class="img-fluid mx-auto d-block rounded-circle">
+                            <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;"  class="mx-auto d-block rounded-circle">
                             </a>
                             <div class="mb-3 mt-3">
-                                <label for="email" class="form-label">Correo:</label>
-                                <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
+                                <label for="mail" class="form-label">Ingrese correo electrónico</label>
+                                <input type="email" class="form-control" id="idmail" placeholder="Ingresa correo" name="mail" required>
+                                <div class="invalid-feedback">Coloca un correo valido.</div>
                               </div>
                               <div class="mb-3">
                                 <label for="pwd1" class="form-label">Contraseña:</label>
                                 <input type="password" required class="form-control" id="pwd1" placeholder="Ingrese contraseña" name="pswd1">
+                                <div class="invalid-feedback">Coloca una contraseña valida.</div>
                               </div>
                                 <a href="restablecer.html">Olvidaste la contraseña?</a>
                                 <div class="form-check mb-3">
@@ -72,6 +74,7 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Iniciar sesion</button>
                                 <a href="registro.html" class="btn btn-primary mx-auto" role="button">Crear cuenta</a>
+                                <a href="loginadmin.html" class="btn btn-primary mx-auto" role="button">Entrar como admin</a>
                         </div>
                     </form>
                     </div>

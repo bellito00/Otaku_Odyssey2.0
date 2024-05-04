@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otaku Odyssey - Contraseña</title>
+    <title>Otaku Odyssey - Login</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style_index.css">
@@ -52,32 +52,34 @@
             <div class="col-sm-6 shadow">
                 <div class="mx-5 p-0 mt-4 bg-dark text-white border rounded">
                     <div class="mt-4 p-5 fondo text-white row justify-content-center centrartexto align-items-center g-2 mt-2">
+                        <form action="admin.html" method="post" class="was-validated">
                         <div>
-                            <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;"  class="mx-auto d-block rounded-circle">
+                            <a href="admin.html"><img src="img/logo.png" alt="logo" style="width:100px;"  class="mx-auto d-block rounded-circle">
                             </a>
-                            <form id="passwordForm2" action="login.html" method="post" class="was-validated">
-                                <div class="mb-3">
-                                    <label for="pwd" class="form-label">Contraseña:</label>
-                                    <input type="password" required class="form-control" id="password"
-                                        placeholder="Ingrese su contraseña" required>
-                                    <div class="invalid-feedback">Ingresa una contraseña.</div>
+                            <div class="mb-3 mt-3">
+                                <label for="mail" class="form-label">Ingrese correo electrónico</label>
+                                <input type="email" class="form-control" id="idmail" placeholder="Ingresa correo" name="mail" required>
+                                <div class="invalid-feedback">Coloca un correo valido.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="pwd1" class="form-label">Contraseña:</label>
+                                <input type="password" required class="form-control" id="pwd1" placeholder="Ingrese contraseña" name="pswd1">
+                                <div class="invalid-feedback">Coloca una contraseña valida.</div>
+                              </div>
+                                <a href="restablecer.html">Olvidaste la contraseña?</a>
+                                <div class="form-check mb-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="recordarme"> Recordarme
+                                    </label>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="pwd2" class="form-label">Confirmar contraseña:</label>
-                                    <input type="password" required class="form-control" id="confirmPassword"
-                                        placeholder="Confirme su contraseña" required>
-                                    <div class="invalid-feedback">Ingresa una contraseña.</div>
-                                    <p class="invalid-feedback" id="message"></p>
-                                </div>
-                                <button type="submit" class="btn btn-primary" onclick="validar()">Cambiar contraseña</button>
-                            </form>
+                                <button type="submit" class="btn btn-primary">Iniciar sesion</button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/validar.js"></script>
     <footer>
         <div class="container-fluid">
             <div class="row">
