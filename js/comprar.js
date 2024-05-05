@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var cleanInput = inputValue.replace(/[^\d+]/g, "");
 
         // Limitar la longitud a 12 caracteres (incluido el símbolo "+")
-        cleanInput = cleanInput.slice(0, 12);
+        cleanInput = cleanInput.slice(0, 13);
 
         // Actualizar el valor del campo de entrada
         phoneInput.value = cleanInput;
