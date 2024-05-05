@@ -10,25 +10,24 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <!-- Parte principal de la administracion -->
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="admin.html">
-                    <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
+                    <img src="img/logo.png" alt="logo" style="width:100px;" class="img-fluid rounded-pill">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="pedidos.html">Pedidos</a>
                         </li>
@@ -36,156 +35,145 @@
                             <a class="nav-link" href="usuarios.html">Usuarios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="perfil.html">Perfil</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="listaproducto.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Volver a la pagina</a>
+                            <a class="nav-link" href="index.html">Volver a la página</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-        <!-- Containers -->
-        <!-- Informacion del administrador -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="mt-4 p-5 text-white rounded">
-                        <h1 style="color:black">Lista de usuarios</h1>
-                        <a href="agregarusuario.html"><button type="button" class="btn btn-primary m-1">Agregar usuario</button></a>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Usuario</th>
-                                        <th>Correo</th>
-                                        <th>Contraseña</th>
-                                        <th>Telefono</th>
-                                        <th>Modificar</th>
-                                        <th>Eliminar</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>xX_Destroyer666_Xx</td>
-                                        <td>bellitogamer777@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="modificarusuario.html"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="admin.html"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>PepitoGamer69</td>
-                                        <td>hinatasimp@gmail.com</td>
-                                        <td>sw*************ea</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Yoelnico</td>
-                                        <td>todosyo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>11</td>
-                                        <td>Ejemplo</td>
-                                        <td>ejemplo@gmail.com</td>
-                                        <td>do*************as</td>
-                                        <td>820421053</td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Modificar</button></a></td>
-                                        <td><a href="#"><button type="button" class="btn btn-primary">Eliminar</button></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+    <!-- Containers -->
+    <!-- Informacion del administrador -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md">
+                <div class="container">
+                    <h1>Tabla de Usuarios</h1>
+                    <div id="mensaje-error" class="alert alert-danger" style="display: none;"></div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>RUT</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Usuario</th>
+                                    <th>Correo</th>
+                                    <th>Contraseña</th>
+                                    <th>Comuna</th>
+                                    <th>Región</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-usuarios">
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn btn-primary" id="agregar-usuario">Agregar Usuario</button>
+                </div>
+
+                <!-- Modal para agregar usuario -->
+                <div class="modal fade" id="modal-agregar-usuario" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Agregar Usuario</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="mensaje-error-modal" class="alert alert-danger" style="display: none;"></div>
+                                <div class="form-group">
+                                    <label for="rut" class="form-label">RUT:</label>
+                                    <input type="text" required class="form-control" id="rut">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" class="form-control" id="nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="apellido">Apellido:</label>
+                                    <input type="text" class="form-control" id="apellido">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usuario">Usuario:</label>
+                                    <input type="text" class="form-control" id="usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="correo">Correo:</label>
+                                    <input type="email" class="form-control" id="correo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contrasena">Contraseña:</label>
+                                    <input type="password" class="form-control" id="contrasena">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comuna">Comuna:</label>
+                                    <select class="form-control" id="comuna">
+                                        <option value="Concepción">Concepción</option>
+                                        <option value="Talcahuano">Talcahuano</option>
+                                        <option value="Chillán">Chillán</option>
+                                        <option value="Los Ángeles">Los Ángeles</option>
+                                        <option value="Coronel">Coronel</option>
+                                        <option value="San Pedro de la Paz">San Pedro de la Paz</option>
+                                        <option value="Tomé">Tomé</option>
+                                        <option value="Penco">Penco</option>
+                                        <option value="Lota">Lota</option>
+                                        <option value="Hualpén">Hualpén</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="region">Región:</label>
+                                    <select class="form-control" id="region">
+                                        <option value="Arica y Parinacota">Arica y Parinacota</option>
+                                        <option value="Tarapacá">Tarapacá</option>
+                                        <option value="Antofagasta">Antofagasta</option>
+                                        <option value="Atacama">Atacama</option>
+                                        <option value="Coquimbo">Coquimbo</option>
+                                        <option value="Valparaíso">Valparaíso</option>
+                                        <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+                                        <option value="Libertador General Bernardo O'Higgins">Libertador General
+                                            Bernardo O'Higgins</option>
+                                        <option value="Maule">Maule</option>
+                                        <option value="Ñuble">Ñuble</option>
+                                        <option value="Biobío" selected>Biobío</option>
+                                        <option value="La Araucanía">La Araucanía</option>
+                                        <option value="Los Ríos">Los Ríos</option>
+                                        <option value="Los Lagos">Los Lagos</option>
+                                        <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General
+                                            Carlos Ibáñez del Campo</option>
+                                        <option value="Magallanes y de la Antártica Chilena">Magallanes y de la
+                                            Antártica Chilena</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" id="guardar-usuario">Guardar</button>
+                                <button type="button" class="btn btn-primary" id="modificar-usuario"
+                                    style="display:none;">Modificar</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <ul class="pagination pagination-sm justify-content-center">
-                            <li class="page-item"><a class="page-link" href="pedidos.html">1</a></li>
-                            <li class="page-item"><a class="page-link" href="pedidos2.html">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="pedidos2.html">Siguiente pagina</a></li>
-                          </ul>
-                    </div>
                 </div>
+                <div id="mensaje-error" class="alert alert-danger" style="display: none;"></div>
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/usuarios.js"></script>
+
 </body>
 
 </html>
