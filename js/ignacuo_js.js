@@ -75,11 +75,43 @@ document.addEventListener('DOMContentLoaded', function () {
             totalPrice += price;
         });
         totalPriceElement.textContent = `Total: ${Math.floor(totalPrice)}$`;
-    }});
-    document.addEventListener('click', function (event) {
-        const isClickInsideCart = cart.contains(event.target);
-        const isClickInsideToggleCart = toggleCart.contains(event.target);
-        if (!isClickInsideCart && !isClickInsideToggleCart) {
-            cart.classList.remove('active');
-        }
+    }
+});
+
+// Función para agregar el producto al carrito y redirigir a la página de compra
+function comprarProducto(nombre, precio) {
+    // Capturar los datos del producto
+    var datosProducto = {
+        nombre: nombre,
+        precio: precio
+    };
+
+    // Convertir el objeto de datos del producto a cadena JSON
+    var datosJSON = JSON.stringify(datosProducto);
+
+    // Guardar los datos del producto en el almacenamiento local
+    localStorage.setItem('producto', datosJSON);
+
+    // Redireccionar a la página de compra
+    window.location.href = 'comprar.html';
+}
+
+// Añadir evento clic a todos los botones "Comprar ahora"
+var botonesComprar = document.querySelectorAll('.btn.btn-success');
+botonesComprar.forEach(function (boton) {
+    boton.addEventListener('click', function () {
+        // Obtener nombre y precio del producto
+        var nombreProducto = this.parentElement.parentElement.querySelector('.card-title').innerText;
+        var precioProducto = this.parentElement.parentElement.querySelector('.card-text').innerText.split(':')[1].trim();
+        // Llamar a la función para comprar el producto
+        comprarProducto(nombreProducto, precioProducto);
     });
+});
+
+document.addEventListener('click', function (event) {
+    const isClickInsideCart = cart.contains(event.target);
+    const isClickInsideToggleCart = toggleCart.contains(event.target);
+    if (!isClickInsideCart && !isClickInsideToggleCart) {
+        cart.classList.remove('active');
+    }
+});

@@ -60,6 +60,10 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="mx-5 mt-4 p-4 bg-dark text-white rounded">
+                    <h1>Detalles de la compra</h1>
+                    <ul id="cartItems">
+                    </ul>
+                    <p class="total-price">Total: 0$</p>
                     <h1>Datos de su Tarjeta</h1>
                     <form action="index.html" method="post">
                         <div class="mb-3">
@@ -80,10 +84,10 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="cardholderName" required class="form-label">Nombre del Titular de la
+                            <label for="cardholderName" class="form-label">Nombre del Titular de la
                                 Tarjeta</label>
                             <input type="text" class="form-control" id="cardholderName"
-                                placeholder="Ingrese el nombre del titular de la tarjeta">
+                                placeholder="Ingrese el nombre del titular de la tarjeta" required>
                         </div>
                     </form>
                 </div>
@@ -99,10 +103,11 @@
                     <form action="index.html" method="post">
                         <div class="mb-3">
                             <label for="address" class="form-label">Dirección*</label>
-                            <input type="text" class="form-control" id="address" placeholder="Ingrese la dirección">
+                            <input type="text" class="form-control" id="address" placeholder="Ingrese la dirección"
+                                required>
                         </div>
                         <div>
-                            <label for="region" class="form-label">Seleccione Region:</label>
+                            <label for="region" class="form-label" required>Seleccione Region:</label>
                             <select id="region" name="region" class="form-select">
                                 <option value="Arica y Parinacota">Arica y Parinacota</option>
                                 <option value="Tarapacá">Tarapacá</option>
@@ -126,7 +131,7 @@
                             </select>
                         </div>
                         <div>
-                            <label for="comuna" class="form-label">Seleccione Comuna:</label>
+                            <label for="comuna" class="form-label" required>Seleccione Comuna:</label>
                             <select id="comuna" name="comuna" class="form-select">
                                 <option value="Concepción">Concepción</option>
                                 <option value="Talcahuano">Talcahuano</option>
@@ -141,28 +146,28 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Teléfono*</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Ingrese el teléfono">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+569123456789">
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="recipientName" class="form-label">Nombre del Receptor*</label>
                                 <input type="text" class="form-control" id="recipientName"
-                                    placeholder="Ingrese el nombre del receptor">
+                                    placeholder="Ingrese el nombre del receptor" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="recipientLastName" class="form-label">Apellido del Receptor*</label>
                                 <input type="text" class="form-control" id="recipientLastName"
-                                    placeholder="Ingrese el apellido del receptor">
+                                    placeholder="Ingrese el apellido del receptor" required>
                             </div>
                             <div class="mb-3 mt-3">
-                                <label for="rut" class="form-label">Ingrese Rut</label>
+                                <label for="rut" class="form-label">Rut*</label>
                                 <input class="form-control" type="text" id="idrut" name="rut" placeholder="12345678-9"
                                     minlength="9" maxlength="10" required>
                                 <div class="invalid-feedback">Ingrese rut sin punto y con guión</div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Realizar compra</button>
+                        <button id="buyButton" type="submit" class="btn btn-primary">Realizar compra</button>
                     </form>
                 </div>
             </div>
