@@ -59,3 +59,10 @@ body {
 .alert {
     border-radius: 5px; /* Añadí bordes redondeados a las alertas */
 }
+.table img {
+    width: 100px; /* Define el ancho deseado */
+    height: 100px; /* Define la altura deseada */
+    object-fit: cover; /* Para ajustar la imagen manteniendo la proporción y cubriendo el área especificada */
+    display: block;
+    margin: auto;
+}

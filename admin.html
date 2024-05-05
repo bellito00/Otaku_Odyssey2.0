@@ -5,69 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de control - Otaku Odyssey</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/estilosadmin.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap"
-        rel="stylesheet">
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/ionicons/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Parte principal de la administracion -->
-    <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="admin.html">
-                    <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="pedidos.html">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="usuarios.html">Usuarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="perfil.html">Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="listaproducto.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Volver a la pagina</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-        <!-- Containers -->
-        <!-- Informacion del administrador -->
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card mt-4 p-5">
-                        <img class="card-img-top img-fluid" src="img/empresario.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Nicolas Liñan De Ariza Fernandez</h4>
-                            <p class="card-text">Bienvenido nuevamente al panel de administrador.</p>
-                            <a href="pedidos.html" class="btn btn-primary">Revisar pedidos recientes</a>
-                        </div>
+            <a class="navbar-brand" href="admin.html">
+                <img src="img/logo.png" alt="logo" style="width:100px;" class="img-fluid rounded-pill">
+            </a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedidos.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listaproducto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Volver a la página</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Información del administrador -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="img/empresario.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Nicolas Liñan De Ariza Fernandez</h4>
+                        <p class="card-text">Bienvenido nuevamente al panel de administrador.</p>
+                        <a href="pedidos.html" class="btn btn-primary">Revisar pedidos recientes</a>
                     </div>
                 </div>
-                <!-- Informacion de ultimos pedidos -->
-                <div class="col-sm-4">
-                    <div class="mt-4 p-5 bg-secondary text-white rounded">
-                        <h2>Ultimos pedidos enviados</h2>
+            </div>
+            <!-- Información de últimos pedidos -->
+            <div class="col-md-6">
+                <div class="card bg-secondary text-white">
+                    <div class="card-body">
+                        <h2 class="card-title">Últimos pedidos enviados</h2>
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
@@ -113,26 +108,35 @@
                         </div>
                     </div>
                 </div>
-            <!-- Informacion externa -->
-            <div class="col-sm-4">
-                <div class="mt-4 p-5 bg-dark text-white rounded">
-                    <div class="alert alert-success">
-                        <strong>Entregados con exito!</strong> Aqui puedes <a href="pedidos.html" class="alert-link">observar los demas pedidos</a>.
-                    </div>
-                    <div class="alert alert-info">
-                        <strong>Nuestro productos son unicos.</strong> <a href="listaproducto.html" class="alert-link">Necesitas agregar o modificar alguno?</a>.
-                    </div>
-                    <div class="alert alert-secondary">
-                        <strong >Tenemos mucha clientela.</strong> <a href="usuarios.html" class="alert-link">Necesitas eliminar o modificar alguno?</a>.
+            </div>
+            <!-- Información externa -->
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <div class="alert alert-success">
+                            <strong>Entregados con éxito!</strong> Aquí puedes <a href="pedidos.html" class="alert-link">observar los demás pedidos</a>.
+                        </div>
+                        <div class="alert alert-info">
+                            <strong>Nuestros productos son únicos.</strong> <a href="listaproducto.html" class="alert-link">¿Necesitas agregar o modificar alguno?</a>.
+                        </div>
+                        <div class="alert alert-secondary">
+                            <strong>Tenemos mucha clientela.</strong> <a href="usuarios.html" class="alert-link">¿Necesitas eliminar o modificar alguno?</a>.
+                        </div>
                     </div>
                 </div>
-                <div class="mt-4 p-5 bg-primary text-white rounded">
-                    <h4>Ganancias estimadas:</h4>
-                    <h3>65.648.490$</h1>
+                <div class="card bg-primary text-white mt-4">
+                    <div class="card-body">
+                        <h4 class="card-title">Ganancias estimadas:</h4>
+                        <h3 class="card-text">65.648.490$</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
