@@ -22,30 +22,30 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="admin.html">
                     <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="pedidos.html">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="usuarios.html">Usuarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="perfil.html">Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="listaproducto.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Volver a la pagina</a>
-                        </li>
-                    </ul>
-                </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pedidos.html">Pedidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="usuarios.html">Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="perfil.html">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listaproducto.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Volver a la pagina</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
@@ -59,33 +59,38 @@
                         <form action="usuarios.html" method="post">
                             <div class="mb-3 mt-3">
                                 <label for="usuario" class="form-label">Nombre de usuario</label>
-                                <input type="text" required class="form-control" id="text" placeholder="Ingresa usuario" name="usuario">
+                                <input type="text" required class="form-control" id="text" placeholder="Ingresa usuario"
+                                    name="usuario">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="email" class="form-label">Correo:</label>
-                                <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
-                              </div>
+                                <input type="email" required class="form-control" id="email" placeholder="Ingrese email"
+                                    name="email">
+                            </div>
                             <div class="mb-3">
                                 <label for="pwd" class="form-label">Contraseña:</label>
-                                <input type="password" required class="form-control" id="pwd" placeholder="Ingresa contraseña" name="pswd">
+                                <input type="password" required class="form-control" id="pwd"
+                                    placeholder="Ingresa contraseña" name="pswd">
                             </div>
-                          <div class="mb-3">
-                            <label for="pwd2" class="form-label">Confirmar contraseña:</label>
-                            <input type="password" required class="form-control" id="pwd2" placeholder="Ingrese contraseña" name="pswd2">
-                          </div>
+                            <div class="mb-3">
+                                <label for="pwd2" class="form-label">Confirmar contraseña:</label>
+                                <input type="password" required class="form-control" id="pwd2"
+                                    placeholder="Ingrese contraseña" name="pswd2">
+                            </div>
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre real:</label>
-                                <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre real" name="nombre">
+                                <input type="text" required class="form-control" id="nombre"
+                                    placeholder="Ingresa nombre real" name="nombre">
                             </div>
                             <div class="mb-3">
                                 <label for="apellido" class="form-label">Apellido:</label>
-                                <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
-                                    name="apellido">
+                                <input type="text" required class="form-control" id="apellido"
+                                    placeholder="Ingresa apellido" name="apellido">
                             </div>
                             <div class="mb-3">
                                 <label for="number" class="form-label">Telefono:</label>
-                                <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
-                                    name="number">
+                                <input type="number" required class="form-control" id="telefono"
+                                    placeholder="Ingresa telefono sin el +56" name="number">
                             </div>
                             <div>
                                 <label for="region" class="form-label">Seleccione Region:</label>
@@ -97,18 +102,21 @@
                                     <option value="Coquimbo">Coquimbo</option>
                                     <option value="Valparaíso">Valparaíso</option>
                                     <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
-                                    <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                    <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo
+                                        O'Higgins</option>
                                     <option value="Maule">Maule</option>
                                     <option value="Ñuble">Ñuble</option>
                                     <option value="Biobío" selected>Biobío</option>
                                     <option value="La Araucanía">La Araucanía</option>
                                     <option value="Los Ríos">Los Ríos</option>
                                     <option value="Los Lagos">Los Lagos</option>
-                                    <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
-                                    <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                                    <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos
+                                        Ibáñez del Campo</option>
+                                    <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica
+                                        Chilena</option>
                                 </select>
-                              </div>
-                              <div>
+                            </div>
+                            <div>
                                 <label for="comuna" class="form-label">Seleccione Comuna:</label>
                                 <select id="comuna" name="comuna" class="form-select">
                                     <option value="Concepción">Concepción</option>
@@ -122,18 +130,19 @@
                                     <option value="Lota">Lota</option>
                                     <option value="Hualpén">Hualpén</option>
                                 </select>
-                              </div>
-                              <br>
-                              <button type="submit" class="btn btn-primary">Modificar usuario</button>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Modificar usuario</button>
                     </div>
-                </form>
+                    </form>
                 </div>
             </div>
 
             <div class="col-sm-5">
                 <div class="card">
                     <h1>Informacion actual del perfil:</h1>
-                    <img class="card-img-top img-fluid mx-auto d-block" src="img/perfil.jpg" style="height: 280px; width:280px;" alt="Card image">
+                    <img class="card-img-top img-fluid mx-auto d-block" src="img/perfil.jpg"
+                        style="height: 280px; width:280px;" alt="Card image">
                     <div class="card-body">
                         <h4 class="card-title">Usuario: xX_Destroyer666_Xx</h4>
                         <p class="card-text">Correo: bellitogamer777@gmail.com</p>
