@@ -22,30 +22,30 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="admin.html">
                     <a href="index.html"><img src="img/logo.png" alt="logo" style="width:100px;" class="rounded-pill">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="pedidos.html">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="usuarios.html">Usuarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="perfil.html">Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="listaproducto.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Volver a la pagina</a>
-                        </li>
-                    </ul>
-                </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pedidos.html">Pedidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="usuarios.html">Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="perfil.html">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listaproducto.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Volver a la pagina</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
     </header>
@@ -59,12 +59,13 @@
                         <form action="pedidos.html" method="post">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre:</label>
-                                <input type="text" required class="form-control" id="nombre" placeholder="Ingresa nombre" name="nombre">
+                                <input type="text" required class="form-control" id="nombre"
+                                    placeholder="Ingresa nombre" name="nombre">
                             </div>
                             <div class="mb-3">
                                 <label for="apellido" class="form-label">Apellido:</label>
-                                <input type="text" required class="form-control" id="apellido" placeholder="Ingresa apellido"
-                                    name="apellido">
+                                <input type="text" required class="form-control" id="apellido"
+                                    placeholder="Ingresa apellido" name="apellido">
                             </div>
                             <div>
                                 <label for="region" class="form-label">Seleccione Region:</label>
@@ -76,18 +77,21 @@
                                     <option value="Coquimbo">Coquimbo</option>
                                     <option value="Valparaíso">Valparaíso</option>
                                     <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
-                                    <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo O'Higgins</option>
+                                    <option value="Libertador General Bernardo O'Higgins">Libertador General Bernardo
+                                        O'Higgins</option>
                                     <option value="Maule">Maule</option>
                                     <option value="Ñuble">Ñuble</option>
                                     <option value="Biobío" selected>Biobío</option>
                                     <option value="La Araucanía">La Araucanía</option>
                                     <option value="Los Ríos">Los Ríos</option>
                                     <option value="Los Lagos">Los Lagos</option>
-                                    <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos Ibáñez del Campo</option>
-                                    <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                                    <option value="Aysén del General Carlos Ibáñez del Campo">Aysén del General Carlos
+                                        Ibáñez del Campo</option>
+                                    <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica
+                                        Chilena</option>
                                 </select>
-                              </div>
-                              <div>
+                            </div>
+                            <div>
                                 <label for="comuna" class="form-label">Seleccione Comuna:</label>
                                 <select id="comuna" name="comuna" class="form-select">
                                     <option value="Concepción">Concepción</option>
@@ -101,11 +105,11 @@
                                     <option value="Lota">Lota</option>
                                     <option value="Hualpén">Hualpén</option>
                                 </select>
-                              </div>
-                              <div class="mb-3">
+                            </div>
+                            <div class="mb-3">
                                 <label for="number" class="form-label">Telefono:</label>
-                                <input type="number" required class="form-control" id="telefono" placeholder="Ingresa telefono sin el +56"
-                                    name="number">
+                                <input type="number" required class="form-control" id="telefono"
+                                    placeholder="Ingresa telefono sin el +56" name="number">
                             </div>
                             <div>
                                 <label for="producto" class="form-label">Seleccione Producto:</label>
@@ -114,8 +118,8 @@
                                     <option value="Madara">Figura Madara Uchiha</option>
                                     <option value="SNK">Manga SNK</option>
                                 </select>
-                              </div>
-                              <div>
+                            </div>
+                            <div>
                                 <label for="estado" class="form-label">Estado:</label>
                                 <select id="estado" name="estado" class="form-select">
                                     <option value="Entregado">Entregado</option>
@@ -123,11 +127,11 @@
                                     <option value="Pagado">Pagado</option>
                                     <option value="Cancelado">Cancelado</option>
                                 </select>
-                              </div>
-                              <br>
-                              <button type="submit" class="btn btn-primary">Modificar pedido</button>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Modificar pedido</button>
                     </div>
-                </form>
+                    </form>
                 </div>
             </div>
 

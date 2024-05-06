@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleCart = document.getElementById('toggleCart');
     const closeCart = document.getElementById('closeCart');
     const cartItems = document.getElementById('cartItems');
+    const decreaseQuantityBtn = document.getElementById('decreaseQuantity');
+    const increaseQuantityBtn = document.getElementById('increaseQuantity');
+    const quantityInput = document.getElementById('quantity');
 
     // Al cargar la página, se verifica si hay elementos en el carrito almacenados en el localStorage
     const savedCartItems = JSON.parse(localStorage.getItem('cartItems'));
@@ -95,18 +98,6 @@ function comprarProducto(nombre, precio) {
     // Redireccionar a la página de compra
     window.location.href = 'comprar.html';
 }
-
-// Añadir evento clic a todos los botones "Comprar ahora"
-var botonesComprar = document.querySelectorAll('.btn.btn-success');
-botonesComprar.forEach(function (boton) {
-    boton.addEventListener('click', function () {
-        // Obtener nombre y precio del producto
-        var nombreProducto = this.parentElement.parentElement.querySelector('.card-title').innerText;
-        var precioProducto = this.parentElement.parentElement.querySelector('.card-text').innerText.split(':')[1].trim();
-        // Llamar a la función para comprar el producto
-        comprarProducto(nombreProducto, precioProducto);
-    });
-});
 
 document.addEventListener('click', function (event) {
     const isClickInsideCart = cart.contains(event.target);
