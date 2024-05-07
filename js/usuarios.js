@@ -12,6 +12,7 @@ $(document).ready(function(){
         $("#modal-agregar-usuario").modal('show');
     });
 
+
     $("#guardar-usuario").click(function(){
         // Obtener los valores de los campos
         const rut = $("#rut").val();
@@ -24,8 +25,15 @@ $(document).ready(function(){
         const region = $("#region").val();
     
         // Validar que los campos obligatorios no estén vacíos
-        if (!rut || !nombre || !apellido || !usuario || !correo || !contrasena || !comuna || !region) {
-            mostrarMensajeError("Por favor, complete todos los campos obligatorios.");
+        // Expresión regular para validar el formato del RUT
+        var rutRegex = /^\d{7,8}-[0-9Kk]$/;
+
+// Expresión regular para validar solo letras
+        var letrasRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+
+        // Validación del RUT, nombre, apellido y correo electrónico
+        if (!rut || !nombre || !apellido || !usuario || !correo || !contrasena || !comuna || !region || !rutRegex.test(rut) || !letrasRegex.test(nombre) || !letrasRegex.test(apellido)) {
+            mostrarMensajeError("Por favor, complete todos los campos obligatorios. Asegúrese de que el RUT tenga el formato correcto (ejemplo: 12345678-9), que el nombre y apellido contengan solo letras, y que el correo electrónico tenga un formato válido.");
             return;
         }
     
@@ -126,3 +134,4 @@ $(document).ready(function(){
         $("#mensaje-error").text(mensaje).fadeIn().delay(3000).fadeOut();
     };
 });
+

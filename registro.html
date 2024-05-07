@@ -50,25 +50,15 @@
                         <input type="email" class="form-control" id="idmail" placeholder="Ingresa correo" name="mail" required>
                         <div class="invalid-feedback">Coloca un correo valido.</div>
                     </div>
-                    <div class="row">
-                        <div class="mb-3 col">
-                            <label for="pwd" class="form-label">Contraseña:</label>
-                            <input type="password" required class="form-control" id="password"
-                                placeholder="Ingrese su contraseña" required>
-                            <div class="invalid-feedback">Ingresa una contraseña.</div>
-                        </div>
-                        <div class="mb-3 col">
-                            <label for="pwd2" class="form-label">Confirmar contraseña:</label>
-                            <input type="password" required class="form-control" id="confirmPassword"
-                                placeholder="Confirme su contraseña" required>
-                            <div class="invalid-feedback">Ingresa una contraseña.</div>
-                            <p class="invalid-feedback" id="message"></p>
-                        </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Contraseña:</label>
+                        <input type="password" required class="form-control" id="password"
+                            placeholder="Ingrese su contraseña" required>
+                        <div class="invalid-feedback">Ingresa una contraseña.</div>
                     </div>
                     <div class="mb-3">
                         <label for="rut" class="form-label">Ingrese Rut</label>
-                        <input class="form-control" type="text" required id="idrut" name="rut"
-                            placeholder="12345678-9" minlength="9" maxlength="10" required>
+                        <input type="text" class="form-control" id="idrut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
                         <div class="invalid-feedback">Ingrese rut sin punto y con guión</div>
                     </div>
                     <div class="row">
@@ -142,6 +132,7 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/validar.js"></script>
+    <script src="js/validarRUT.js"></script>
 </body>
 
 </html>

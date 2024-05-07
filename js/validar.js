@@ -1,63 +1,19 @@
-document.getElementById('passwordForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
-    const message = document.getElementById('message');
 
-    if (password === confirmPassword) {
-        message.innerHTML = "";
-    } else {
-        message.innerHTML = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo.";
+
+const stockInput = document.getElementById('stock');
+const valorInput = document.getElementById('valor');
+
+// Agrega event listeners para el evento "input" en cada campo
+stockInput.addEventListener('input', function() {
+    // Si el valor es negativo, establece el valor como 0
+    if (this.value < 0) {
+        this.value = 0;
     }
-
-    if (password !== confirmPassword) {
-        message.innerHTML = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo.";
-        return false; // Evita que el formulario se envíe
-    }
-
-    window.location.href = "confirmacion.html";
-
-
 });
 
-function validar(){
-    document.getElementById('passwordForm2').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const password = document.getElementById('password').value;
-        const confirmPassword = document.getElementById('confirmPassword').value;
-        const message = document.getElementById('message');
-    
-        if (password === confirmPassword) {
-            message.innerHTML = "";
-        } else {
-            message.innerHTML = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo.";
-        }
-    
-        if (password !== confirmPassword) {
-            message.innerHTML = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo.";
-            return false; // Evita que el formulario se envíe
-        }
-    
-        window.location.href = "login.html";
-    
-    
-    });
-}
-
-document.getElementById('password').addEventListener('input', validatePassword);
-document.getElementById('confirmPassword').addEventListener('input', validatePassword);
-
-function validatePassword() {
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
-    const message = document.getElementById('message');
-
-    if (password === confirmPassword) {
-        message.innerHTML = "";
-    } else {
-        message.innerHTML = "Las contraseñas no coinciden. Por favor, inténtelo de nuevo.";
+valorInput.addEventListener('input', function() {
+    // Si el valor es negativo, establece el valor como 0
+    if (this.value < 0) {
+        this.value = 0;
     }
-
-}
+});
