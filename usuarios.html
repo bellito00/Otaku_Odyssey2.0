@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="" class="sidebar-link">
+                    <a href="estadisticas.html" class="sidebar-link">
                         <i class="lni lni-bar-chart"></i>
                         <span>Estadisticas</span>
                     </a>
@@ -136,7 +136,9 @@
                                                 <div id="mensaje-error-modal" class="alert alert-danger" style="display: none;"></div>
                                                 <div class="form-group">
                                                     <label for="rut" class="form-label">RUT:</label>
-                                                    <input type="text" required class="form-control" id="rut">
+                                                    <input type="text" class="form-control" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+                                                    
+                                                    <script src="js/usuarios.js"></script>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="nombre">Nombre:</label>
