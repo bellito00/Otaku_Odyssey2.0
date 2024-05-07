@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleCart = document.getElementById('toggleCart');
     const closeCart = document.getElementById('closeCart');
     const cartItems = document.getElementById('cartItems');
-    const decreaseQuantityBtn = document.getElementById('decreaseQuantity');
-    const increaseQuantityBtn = document.getElementById('increaseQuantity');
-    const quantityInput = document.getElementById('quantity');
 
     // Al cargar la página, se verifica si hay elementos en el carrito almacenados en el localStorage
     const savedCartItems = JSON.parse(localStorage.getItem('cartItems'));
