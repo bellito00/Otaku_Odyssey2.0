@@ -121,7 +121,7 @@
                             </div>
                             <div class="col">
                                 <div class="card h-100">
-                                    <img class="card-img-top" src="img/itachi.png" alt="Card image" style="width:100%">
+                                    <img class="card-img-top" src="img/itachi.jpg" alt="Card image" style="width:100%">
                                     <div class="card-body d-flex flex-column justify-content-between">
                                         <h4 class="card-title">Itachi Uchiha "Naruto"</h4>
                                         <p class="card-text">Precio: 24.990$</p>
@@ -170,17 +170,20 @@
         </div>
         
     </main>
-    <div class="cart" id="cart">
+    <div class="cart" id="cart" style="background-color: #f5f5f5; border-radius: 10px; padding: 20px;">
         <div class="cart-header">
-            <button class="btn-close" id="closeCart"></button>
+            <button class="btn-close" id="closeCart" style="background-color: #e74c3c; color: white; border: none; border-radius: 50%; padding: 5px 10px; top: 10px; right: 10px;"></button>
         </div>
-        <h2 class="font-weight-bold">Mi compra</h2>
+        <h2 class="font-weight-bold" style="color: #333;">Tu Carrito de Compras</h2>
         <ul class="cart-items" id="cartItems">
         </ul>
-        <div class="cart-footer">
+        <div class="cart-footer" style="margin-top: 20px;">
             <p class="total-price">Total: 0$</p>
             <button class="btn btn-danger" id="clearCart">Vaciar carrito</button>
             <a href="comprar.html" class="btn btn-success">Comprar</a>
+        </div>
+        <div>
+            <img src="img/banner.jpg" class="rounded shadow" style="margin-top: 20px;" width="270px" alt="">
         </div>
     </div>
     <footer class="bg-dark text-white">
